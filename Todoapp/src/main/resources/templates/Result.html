@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Task Result</title>
+</head>
+<body>
+    <h1>Your todo</h1>
+    <p th:text="'Task Name: ' + ${task.name}"></p>
+
+    <p th:text="'Task Description: ' + ${task.desc}"></p>
+
+</body>
+</html>
