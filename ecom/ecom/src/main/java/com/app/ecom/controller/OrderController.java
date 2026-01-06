@@ -27,6 +27,6 @@ public class OrderController {
     @GetMapping("/orders")
     public ResponseEntity<List<OrderResponse>> getAllOrders() {
         List<OrderResponse> orderResponseList = orderService.getAllOrderResponses();
-        return new ResponseEntity<>(orderResponseList, HttpStatus.OK);
+        return new ResponseEntity<>(orderResponseList, HttpStatus.ACCEPTED);
     }
 }
